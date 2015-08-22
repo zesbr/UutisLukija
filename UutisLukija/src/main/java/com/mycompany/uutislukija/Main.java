@@ -10,6 +10,8 @@ public class Main {
             System.out.println("Et antanut komentoa. Käytettävissä olevat komennot: " + komennot());
         } else if(args[0].equals("lyhyt")){
             System.out.println(hakija.haeLyhytUutinen());
+        } else if(args[0].equals("satunnainen")){
+            System.out.println(hakija.haeSatunnainenUutinen());
         }
     }
     
