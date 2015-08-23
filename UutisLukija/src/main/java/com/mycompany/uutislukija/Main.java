@@ -8,12 +8,14 @@ public class Main {
         HackerPaivanUutiset hakija = new HackerPaivanUutiset();
         if(args.length == 0 || args[0].isEmpty()){
             System.out.println("Et antanut komentoa. Käytettävissä olevat komennot: " + komennot());
-        } else if(args[0].equals("lyhyt")){
-            System.out.println(hakija.haeLyhytUutinen());
+        } else if(args[0].equals("viimeisin")){
+            System.out.println(hakija.haeViimeisinUutinen());
+        } else if(args[0].equals("suosituin")){
+            System.out.println(hakija.haeSuosituinUutinen());
         }
     }
     
     public static String komennot(){
-        return "Komennot: lyhyt, satunnainen";
+        return "Komennot: viimeisin, satunnainen";
     }
 }
