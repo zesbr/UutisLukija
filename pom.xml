@@ -101,7 +101,7 @@
                     </descriptorRefs>
                     <archive>
                         <manifest>
-                            <mainClass>App</mainClass>
+                            <mainClass>uutislukija.App</mainClass>
                         </manifest>
                     </archive>
                 </configuration>

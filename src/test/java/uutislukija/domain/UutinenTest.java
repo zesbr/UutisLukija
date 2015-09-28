@@ -1,5 +1,6 @@
-package com.mycompany.uutislukija.domain;
+package uutislukija.domain;
 
+import uutislukija.domain.Uutinen;
 import org.junit.Before;
 import org.junit.Test;
 import static org.junit.Assert.*;

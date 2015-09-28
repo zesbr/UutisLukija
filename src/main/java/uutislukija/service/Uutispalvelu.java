@@ -1,6 +1,6 @@
-package com.mycompany.uutislukija.service;
+package uutislukija.service;
 
-import com.mycompany.uutislukija.domain.Uutinen;
+import uutislukija.domain.Uutinen;
 
 public interface Uutispalvelu {   
     

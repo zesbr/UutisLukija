@@ -1,7 +1,8 @@
-package com.mycompany.uutislukija.config;
+package uutislukija.config;
 
-import com.mycompany.uutislukija.App;
-import com.mycompany.uutislukija.service.Uutispalvelu;
+import uutislukija.App;
+import uutislukija.*;
+import uutislukija.service.Uutispalvelu;
 import freemarker.cache.ClassTemplateLoader;
 import java.util.HashMap;
 import java.util.Map;

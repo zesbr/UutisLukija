@@ -1,10 +1,11 @@
-package com.mycompany.uutislukija.config;
+package uutislukija.config;
 
+import uutislukija.config.WebConfig;
 import static com.github.tomakehurst.wiremock.client.WireMock.*;
 import com.github.tomakehurst.wiremock.junit.WireMockRule;
-import com.mycompany.uutislukija.domain.Uutinen;
-import com.mycompany.uutislukija.service.HackerNews;
-import com.mycompany.uutislukija.service.Uutispalvelu;
+import uutislukija.domain.Uutinen;
+import uutislukija.service.HackerNews;
+import uutislukija.service.Uutispalvelu;
 import java.io.IOException;
 import org.junit.Test;
 import static org.junit.Assert.*;

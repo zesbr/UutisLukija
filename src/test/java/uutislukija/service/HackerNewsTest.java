@@ -1,9 +1,10 @@
-package com.mycompany.uutislukija.service;
+package uutislukija.service;
 
+import uutislukija.service.HackerNews;
 import com.mycompany.hackernewsuutiset.HackerPaivanUutiset;
 import org.junit.Test;
 import static org.junit.Assert.*;
-import com.mycompany.uutislukija.domain.Uutinen;
+import uutislukija.domain.Uutinen;
 import org.junit.Before;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;

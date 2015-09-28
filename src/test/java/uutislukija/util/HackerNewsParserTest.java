@@ -1,6 +1,7 @@
-package com.mycompany.uutislukija.util;
+package uutislukija.util;
 
-import com.mycompany.uutislukija.domain.Uutinen;
+import uutislukija.util.HackerNewsParser;
+import uutislukija.domain.Uutinen;
 import org.junit.Test;
 import static org.junit.Assert.*;
 

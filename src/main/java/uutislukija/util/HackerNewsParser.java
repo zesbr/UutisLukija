@@ -1,6 +1,6 @@
-package com.mycompany.uutislukija.util;
+package uutislukija.util;
 
-import com.mycompany.uutislukija.domain.Uutinen;
+import uutislukija.domain.Uutinen;
 
 public class HackerNewsParser {
 

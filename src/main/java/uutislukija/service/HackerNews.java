@@ -1,8 +1,8 @@
-package com.mycompany.uutislukija.service;
+package uutislukija.service;
 
 import com.mycompany.hackernewsuutiset.HackerPaivanUutiset;
-import com.mycompany.uutislukija.domain.Uutinen;
-import com.mycompany.uutislukija.util.HackerNewsParser;
+import uutislukija.domain.Uutinen;
+import uutislukija.util.HackerNewsParser;
 
 public class HackerNews implements Uutispalvelu {
     

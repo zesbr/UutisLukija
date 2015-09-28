@@ -1,4 +1,4 @@
-package com.mycompany.uutislukija.domain;
+package uutislukija.domain;
 
 public class Uutinen {
 

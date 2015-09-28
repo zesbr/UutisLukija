@@ -1,4 +1,6 @@
-package com.mycompany.uutislukija;
+package uutislukija;
+
+
 
 import org.junit.After;
 import org.junit.AfterClass;

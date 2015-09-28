@@ -1,8 +1,10 @@
-package com.mycompany.uutislukija;
+package uutislukija;
+
+
 
 import com.mycompany.hackernewsuutiset.HackerPaivanUutiset;
-import com.mycompany.uutislukija.config.WebConfig;
-import com.mycompany.uutislukija.service.HackerNews;
+import uutislukija.config.WebConfig;
+import uutislukija.service.HackerNews;
 import java.io.IOException;
 
 public class App {
