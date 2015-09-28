@@ -10,4 +10,4 @@ before_install:
   - mvn clean install -U -Dmaven.test.skip=true -f HackerNewsUutiset/pom.xml
 
 after_success:
-  - mvn clean cobertura:cobertura coveralls:report
+  - mvn clean compile cobertura:cobertura coveralls:report
