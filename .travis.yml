@@ -1,5 +1,8 @@
 language: java
 
+jdk:
+  - oraclejdk8
+
 before_install:
   - git clone https://github.com/hy-ohtu/PaivanUutiset
   - mvn clean install -U -Dmaven.test.skip=true -f PaivanUutiset/pom.xml
