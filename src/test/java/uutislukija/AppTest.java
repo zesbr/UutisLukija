@@ -36,6 +36,7 @@ public class AppTest extends FluentTest {
         goTo("http://localhost:4567/suosituin");
         assertTrue(pageSource().contains("Suosituin uutinen"));
         assertTrue(pageSource().contains("Lue uutinen täältä"));
+        
     }
     
     @Test
@@ -44,5 +45,5 @@ public class AppTest extends FluentTest {
         assertTrue(pageSource().contains("Viimeisin uutinen"));
         assertTrue(pageSource().contains("Lue uutinen täältä"));
     }
-    
+     
 }
