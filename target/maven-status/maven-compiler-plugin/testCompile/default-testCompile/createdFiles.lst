@@ -1,0 +1,5 @@
+com/mycompany/uutislukija/config/WebConfigTest.class
+com/mycompany/uutislukija/domain/UutinenTest.class
+com/mycompany/uutislukija/util/HackerNewsParserTest.class
+com/mycompany/uutislukija/AppTest.class
+com/mycompany/uutislukija/service/HackerNewsTest.class

@@ -1,0 +1,6 @@
+com/mycompany/uutislukija/App.class
+com/mycompany/uutislukija/service/Uutispalvelu.class
+com/mycompany/uutislukija/service/HackerNews.class
+com/mycompany/uutislukija/util/HackerNewsParser.class
+com/mycompany/uutislukija/config/WebConfig.class
+com/mycompany/uutislukija/domain/Uutinen.class
