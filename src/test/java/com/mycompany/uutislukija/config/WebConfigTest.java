@@ -44,12 +44,5 @@ public class WebConfigTest {
 
         
     }
- 
-    @Test
-    public void lol() {
-        verify(getRequestedFor(urlMatching("/suosituin"))
-            .withRequestBody(matching(".*<message>1234</message>.*"))
-            .withHeader("Content-Type", notMatching("application/json")));
-    }
     
 }
