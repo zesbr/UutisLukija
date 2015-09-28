@@ -11,6 +11,7 @@ import spark.template.freemarker.FreeMarkerEngine;
 import freemarker.template.Configuration;
 import java.io.IOException;
 import org.springframework.stereotype.Component;
+import static spark.SparkBase.port;
 
 @Component
 public class WebConfig {
@@ -26,7 +27,8 @@ public class WebConfig {
     }
     
     public void setupRoutes() {
-
+        port(getHerokuAssignedPort());
+        
         get("/", (request, response) -> {
             Map<String, Object> map = new HashMap<>();
             return new ModelAndView(map, "index.ftl");
@@ -46,6 +48,14 @@ public class WebConfig {
             return new ModelAndView(map, "show.ftl");
         }, new FreeMarkerEngine(config));
         
+    }
+    
+    static int getHerokuAssignedPort() {
+        ProcessBuilder processBuilder = new ProcessBuilder();
+        if (processBuilder.environment().get("PORT") != null) {
+            return Integer.parseInt(processBuilder.environment().get("PORT"));
+        }
+        return 4567; //return default port if heroku-port isn't set (i.e. on localhost)
     }
     
 }
