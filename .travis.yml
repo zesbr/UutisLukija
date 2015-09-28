@@ -3,6 +3,10 @@ language: java
 jdk:
   - oraclejdk8
 
+env:
+  global:
+    - HEROKU_API_KEY=49eaa858-9750-4d3b-b7ad-4921b88f6e1e
+
 before_install:
   - git clone https://github.com/hy-ohtu/PaivanUutiset
   - mvn clean install -U -Dmaven.test.skip=true -f PaivanUutiset/pom.xml
@@ -11,3 +15,4 @@ before_install:
 
 after_success:
   - mvn clean cobertura:cobertura coveralls:report
+  - mvn heroku:deploy
