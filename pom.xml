@@ -13,65 +13,43 @@
         <org.springframework.version>3.1.1.RELEASE</org.springframework.version>
     </properties>    
     <dependencies>
-        
-        <!-- HackerNewsUutiset -->
         <dependency>
             <groupId>com.mycompany</groupId>
             <artifactId>HackerNewsUutiset</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
-        
-        <!-- GSON -->
         <dependency>
             <groupId>com.google.code.gson</groupId>
             <artifactId>gson</artifactId>
             <version>2.2.4</version>
         </dependency>
-        
-        <!-- JUnit -->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>4.10</version>
             <scope>test</scope>
         </dependency>
-        
-        <!-- Mockito -->
         <dependency>
             <groupId>org.mockito</groupId>
             <artifactId>mockito-all</artifactId>
             <version>1.9.0</version>
             <scope>test</scope>
         </dependency>
-        
-        <!-- WireMock -->
-        <dependency>
-            <groupId>com.github.tomakehurst</groupId>
-            <artifactId>wiremock</artifactId>
-            <version>1.57</version>
-        </dependency>
-        
-        <!-- Spark Java -->
         <dependency>
             <groupId>com.sparkjava</groupId>
             <artifactId>spark-core</artifactId>
             <version>${spark.version}</version>
         </dependency>
-        
-        <!-- Spark Freemarker -->
         <dependency>
             <groupId>com.sparkjava</groupId>
             <artifactId>spark-template-freemarker</artifactId>
             <version>${spark.freemarker.version}</version>
         </dependency>
-
-        <!-- Freemarker -->
         <dependency>
             <groupId>org.freemarker</groupId>
             <artifactId>freemarker</artifactId>
             <version>${freemarker.version}</version>
         </dependency>
-        
     </dependencies>
     <build>
         <plugins>
