@@ -3,9 +3,7 @@ package com.mycompany.uutislukija.service;
 import com.mycompany.hackernewsuutiset.HackerPaivanUutiset;
 import com.mycompany.uutislukija.domain.Uutinen;
 import com.mycompany.uutislukija.util.HackerNewsParser;
-import org.springframework.stereotype.Component;
 
-@Component
 public class HackerNews implements Uutispalvelu {
     
     private HackerPaivanUutiset hakija;

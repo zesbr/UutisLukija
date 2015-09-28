@@ -10,10 +10,8 @@ import static spark.Spark.get;
 import spark.template.freemarker.FreeMarkerEngine;
 import freemarker.template.Configuration;
 import java.io.IOException;
-import org.springframework.stereotype.Component;
 import static spark.SparkBase.port;
 
-@Component
 public class WebConfig {
     
     Configuration config;
@@ -30,22 +28,22 @@ public class WebConfig {
         port(getHerokuAssignedPort());
         
         get("/", (request, response) -> {
-            Map<String, Object> map = new HashMap<>();
-            return new ModelAndView(map, "index.ftl");
+            Map<String, Object> model = new HashMap<>();
+            return new ModelAndView(model, "index.ftl");
         },new FreeMarkerEngine(config));
         
         get("/viimeisin", (request, response) -> {
-            Map<String, Object> map = new HashMap<>();
-            map.put("title", "Viimeisin uutinen");
-            map.put("uutinen", uutispalvelu.haeViimeisin());
-            return new ModelAndView(map, "show.ftl");
+            Map<String, Object> model = new HashMap<>();
+            model.put("title", "Viimeisin uutinen");
+            model.put("uutinen", uutispalvelu.haeViimeisin());
+            return new ModelAndView(model, "show.ftl");
         }, new FreeMarkerEngine(config));
         
         get("/suosituin", (request, response) -> {
-            Map<String, Object> map = new HashMap<>();
-            map.put("title", "Suosituin uutinen");
-            map.put("uutinen", uutispalvelu.haeSuosituin());
-            return new ModelAndView(map, "show.ftl");
+            Map<String, Object> model = new HashMap<>();
+            model.put("title", "Suosituin uutinen");
+            model.put("uutinen", uutispalvelu.haeSuosituin());
+            return new ModelAndView(model, "show.ftl");
         }, new FreeMarkerEngine(config));
         
     }
